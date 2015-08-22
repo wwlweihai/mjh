@@ -1,0 +1,37 @@
+<ion-view >
+    <ion-nav-title>
+        <img class="title-image" src="images/logo.png"/>
+    </ion-nav-title>
+    <ion-content class="has-header view_body news-body">
+        <div class="content-header" translate>
+            lastNews
+        </div>
+        <div class="padding"></div>
+        <div class="text-center" ng-show="data.loading">
+            <ion-spinner icon="android" style="fill: white"></ion-spinner>
+        </div>
+        <ul class="list">
+            <li class="item item-icon-right row row-top" ng-repeat="news in data.newsList" ui-sref="newDetail({id:news.id})">
+                <div class="col col-34 item-pic">
+                    <img ng-src="{{news.thumbnail}}">
+                    <div class="tip-new">
+                        <img src="images/new.png">
+                    </div>
+                </div>
+                <div class="item-intro item-text-wrap">
+                    <div class="item-date col col-66">
+                        {{news.date}}
+                    </div>
+                    <div class="item-title">
+                        {{news.title}}
+                    </div>
+                    <div class="item-detail">
+                        {{news.excerpt}}
+                    </div>
+                </div>
+                <i class="icon ion-ios-arrow-right"></i>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
+

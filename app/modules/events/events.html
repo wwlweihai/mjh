@@ -1,0 +1,39 @@
+<ion-view view-title="Events">
+    <ion-nav-title>
+        <img class="title-image" src="images/logo.png" />
+    </ion-nav-title>
+    <ion-content class="has-header view_body events-body">
+        <!--<div class="background-image">-->
+        <!--</div>-->
+        <div class="nav-bar row" style="padding: 0px;">
+            <div class="col col-50 nav-item " ng-class="{'active': data.selectedId == 1}" ng-click="navTo(1)" translate>
+                featureEvents
+            </div>
+            <div class="col col-50 nav-item" ng-class="{'active': data.selectedId == 0}" ng-click="navTo(0)" translate>
+                oldEvents
+            </div>
+        </div>
+        <ul class="list">
+            <li class="item row" ng-repeat="event in data.events" ui-sref="eventDetail({id:event.id,type:data.selectedId})">
+                <div class="item-pic col col-34">
+                    <img ng-src="{{event.icon}}">
+                    <div class="tip-new">
+                        <img src="images/new.png">
+                    </div>
+                </div>
+                <div class=" col col-66 item-intro item-text-wrap">
+                    <div class="item-title">
+                        {{event.eventname}}
+                    </div>
+                    <div class="item-date">
+                        {{event.startdate}} - {{event.enddate}}
+                    </div>
+                    <div class="more">
+                        了解更多>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
+

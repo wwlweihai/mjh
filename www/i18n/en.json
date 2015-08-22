@@ -1,0 +1,9 @@
+{
+    "cancelLgSet": "cancel",
+    "lgSet": "Language",
+    "events": "Events",
+    "featureEvents":"Upcoming Events",
+    "oldEvents":"Past Events",
+    "news": "News",
+    "lastNews":"Last News"
+}

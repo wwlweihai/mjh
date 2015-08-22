@@ -1,0 +1,20 @@
+<ion-view view-title="newDetail">
+    <ion-nav-title>
+        <img class="title-image" src="images/logo.png" />
+    </ion-nav-title>
+    <ion-content class="view_body newDetail-body">
+        <div class="text-center" ng-show="data.loading">
+            <ion-spinner icon="android" style="fill: white"></ion-spinner>
+        </div>
+        <div class="new-title">
+            {{data.news.title}}
+        </div>
+        <div class="new-avatar">
+            <img ng-src="{{data.news.thumbnail}}">
+        </div>
+        <div class="new-intro" ng-bind-html="data.detailContent">
+            <!--{{data.news.content}}-->
+        </div>
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>美酒汇</title>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- build:css(.) styles/modules.css -->
+        <link rel="stylesheet" href="bower_components/ionic/css/ionic.css">
+        <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+        <!-- endbuild -->
+        <script src="cordova.js"></script>
+        <!-- build:js(.) scripts/vendor.js -->
+        <script src="bower_components/ionic/js/ionic.bundle.js"></script>
+        <script src="bower_components/lodash/lodash.js"></script>
+        <script src="bower_components/restangular/dist/restangular.js"></script>
+        <script src="bower_components/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
+        <script src="bower_components/ngCordova/dist/ng-cordova.min.js"></script>
+        <script src="bower_components/ionic-service-core/ionic-core.js"></script>
+        <script src="bower_components/ionic-service-push/ionic-push.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="modules/menu.css">
+        <link rel="stylesheet" href="modules/languageSetModal/languageSetModal.css">
+        <link rel="stylesheet" href="modules/news/news.css">
+        <link rel="stylesheet" href="modules/news/newDetail/newDetail.css">
+        <link rel="stylesheet" href="modules/events/events.css">
+        <link rel="stylesheet" href="modules/events/eventDetail/eventDetail.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/push.config.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/app.value.js"></script>
+        <script src="modules/menu.controller.js"></script>
+        <script src="modules/events/events.controller.js"></script>
+        <script src="modules/events/eventDetail/eventDetail.controller.js"></script>
+        <script src="modules/news/news.controller.js"></script>
+        <script src="modules/news/newDetail/newDetail.controller.js"></script>
+        <script src="modules/blank/blank.controller.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <ion-nav-bar class="header-bar" align-title="center" >
+            <ion-nav-back-button class="button-clear">
+                <i class="ion-arrow-left-c"></i>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view animation="slide-left-right">
+        </ion-nav-view>
+    </body>
+</html>
