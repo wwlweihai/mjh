@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
         <title>美酒汇</title>
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- build:css(.) styles/modules.css -->
@@ -21,7 +22,6 @@
         <script src="bower_components/angular-translate/angular-translate.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
         <!-- endbuild -->
-
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/reset.css">
@@ -33,7 +33,6 @@
         <link rel="stylesheet" href="modules/events/events.css">
         <link rel="stylesheet" href="modules/events/eventDetail/eventDetail.css">
         <!-- endbuild -->
-
         <!-- build:js scripts/main.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/push.config.js"></script>

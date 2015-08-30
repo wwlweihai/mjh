@@ -3,7 +3,6 @@
  */
 angular.module('app.config')
 .config([
-        '$ionicAppProvider',
         '$stateProvider',
         '$urlRouterProvider',
         '$ionicConfigProvider',
@@ -11,19 +10,14 @@ angular.module('app.config')
         '$translateProvider',
         appConfig
 ]);
-function appConfig($ionicAppProvider,$stateProvider,$urlRouterProvider,$ionicConfigProvider,RestangularProvider,$translateProvider) {
-    $ionicAppProvider.identify({
-        app_id: '7936949e',
-        api_key: '928da66f04e9efc8e91150b5614aa005621be47f958464a8',
-        dev_push:true
-    });
+function appConfig($stateProvider,$urlRouterProvider,$ionicConfigProvider,RestangularProvider,$translateProvider) {
     $translateProvider.useSanitizeValueStrategy('sanitize');
     $translateProvider.preferredLanguage('en');
     $translateProvider.useStaticFilesLoader({
         prefix: 'i18n/',
         suffix: '.json'
     });
-    $ionicConfigProvider.backButton.text('').icon('ion-ios-arrow-left').previousTitleText(false);
+    $ionicConfigProvider.backButton.text('').icon('ion-ios-arrow-back').previousTitleText(false);
     RestangularProvider.setBaseUrl("http://mobidev.homeip.net/wineceller/index.php");
     $ionicConfigProvider.views.transition('platform');
     //导航栏置底

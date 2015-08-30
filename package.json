@@ -77,11 +77,22 @@
       "id": "nl.x-services.plugins.socialsharing"
     },
     {
-      "locator": "https://github.com/phonegap-build/PushPlugin",
-      "id": "com.phonegap.plugins.PushPlugin"
-    }
+      "locator": "/Users/jyh/Desktop/dev/webPro/mjh/jpush-phonegap-plugin",
+      "id": "cn.jpush.phonegap.JPushPlugin"
+    },
+    "cordova-plugin-device"
   ],
   "cordovaPlatforms": [
-    "android"
+    "android",
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    },
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
   ]
 }

@@ -1,6 +1,7 @@
 /**
  * Created by ww on 2015/3/24.
  */
+
 angular.module('app', [
     'app.core',
     'app.value',
@@ -13,8 +14,8 @@ angular.module('app.core', [
     //restful request tool
     'pascalprecht.translate',
     'ngCordovaOauth',
-    'ionic.service.core',
-    'ionic.service.push',
+    //'ionic.service.core',
+    //'ionic.service.push',
     'ngCordova',
     'restangular'
     //auto grow textarea for chats/chat-detail（信息发送自增长舒适框）
